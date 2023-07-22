@@ -1,0 +1,72 @@
+* {
+    font-family: 'Dongle', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 60vh;
+
+}
+
+main h3 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.animacion-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.animacion {
+    font-size: 18px;
+    width: 60vw;
+    padding: 30px;
+    margin-left: 0;
+    margin-top: 15px;
+    margin-right: 20px;
+    animation: moverP 5s ease-in-out;
+}
+
+@keyframes moverP {
+    0%,
+    20% {
+        margin-left: 0;
+    }
+
+    30%,
+    70% {
+        margin-left: 60vw;
+    }
+
+    80%,
+    100% {
+        margin-left: 0;
+    }
+}
+
+.animacion:nth-child(1) {
+    background-color: orange;
+    animation-delay: 0s;
+}
+
+.animacion:nth-child(2) {
+    background-color: palegoldenrod;
+    animation-delay: 2s;
+}
+
+.animacion:nth-child(3) {
+    background-color: pink;
+    animation-delay: 4s;
+}
